@@ -1,1 +1,5 @@
-#include "ast/ast.h"
+#include "ast/ast.hpp"
+
+namespace monkey {
+
+}

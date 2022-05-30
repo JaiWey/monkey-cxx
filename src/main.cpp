@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-#include "lexer/lexer.cpp"
+#include "lexer/lexer.hpp"
 
 int main(int argc, char** argv) {
     // monkey::print();

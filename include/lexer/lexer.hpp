@@ -2,7 +2,7 @@
 #define MONKEY_LEXER_H_
 
 #include <string>
-#include "token/token.hpp"
+#include "../token/token.hpp"
 
 namespace monkey {
 
@@ -14,6 +14,10 @@ class Lexer{
     private:
         void readChar();
         char peekChar();
+        std::string readIdentifier();
+        std::string readNumber();
+        std::string readString();
+        void skipWhitespace();
 
         std::string input;
         int position;
