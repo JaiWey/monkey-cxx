@@ -8,11 +8,13 @@ set(SOURCES
 ../include/ast/ast.hpp
 ../include/lexer/lexer.hpp
 ../include/token/token.hpp
+../include/parser/parser.hpp
 ./ast/ast.cpp
 ./token/token.cpp
-./lexer/lexer.cpp)
+./lexer/lexer.cpp
+./parser/parser.cpp)
 
-add_executable(${BINARY}_run main.cpp
-    ${SOURCE})
+add_executable(${BINARY}_run
+    ${SOURCE} ./main.cpp)
 
 add_library(${BINARY}_lib STATIC ${SOURCES})
